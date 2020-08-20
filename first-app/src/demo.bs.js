@@ -2,6 +2,16 @@
 'use strict';
 
 
+var name_obj = {
+  info: {
+    author: "Bob"
+  }
+};
+
+var name = name_obj.info.author;
+
 console.log("Hello, BuckleScript !!");
 
-/*  Not a pure module */
+exports.name_obj = name_obj;
+exports.name = name;
+/* name Not a pure module */

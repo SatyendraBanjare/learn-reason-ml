@@ -8,4 +8,14 @@ type person = {
 };
 
 
+let name_obj = [%bs.obj 
+	{
+  	info: {
+  		author: "Bob"
+  		}
+	}
+];
+
+let name = name_obj##info##author;
+
 let () = Js.log ("Hello, BuckleScript !!");
