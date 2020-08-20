@@ -24,3 +24,11 @@ let rr = roundoff(5.222111);
 Js.log("random no :");
 Js.log(randnum);
 Js.log(rr);
+
+
+type timerId;
+[@bs.val] external setTimeout: (unit => unit, int) => timerId = "setTimeout" ;
+[@bs.val] external clearTimeout: timerId => unit = "clearTimeout" ;
+
+let id = setTimeout(() => (Js.log("hello")), 1000 )
+clearTimeout(id)
