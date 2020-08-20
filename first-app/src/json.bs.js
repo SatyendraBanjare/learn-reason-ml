@@ -7,11 +7,6 @@ var result = JSON.parse(" { \"names\": [\"Luke\", \"Christine\"] } ");
 
 var name1 = Caml_array.caml_array_get(result.names, 0);
 
-console.log(JSON.stringify([
-  "Amy",
-  "Joe"
-]));
-
 console.log(result);
 
 console.log(name1);

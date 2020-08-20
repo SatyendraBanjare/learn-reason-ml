@@ -8,4 +8,7 @@ type person = {
 };
 
 
-let () = Js.log ("Hello, BuckleScript !!");
+let joe = person(~name="Joe", ~age=20, ~bg=A);
+let pam = person(~name="pam", ~age=29, ());
+Js.log(joe);
+Js.log(pam);
