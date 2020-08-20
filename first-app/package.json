@@ -4,7 +4,8 @@
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
-    "watch": "bsb -make-world -w"
+    "watch": "bsb -make-world -w -ws _ ",
+    "test" : "echo \" Error No Test Specified !! \"  && exit 1"
   },
   "keywords": [
     "BuckleScript"
